@@ -6,7 +6,7 @@
 
 template<typename T>
 class TPQueue {
-   private:
+ private:
   struct ITEM {
     T value;
     ITEM* next, * prev;
@@ -19,6 +19,7 @@ class TPQueue {
     item->prev = prev;
     return item;
   }
+   
  public:
   TPQueue() :head(nullptr), tail(nullptr) {}
   ~TPQueue() {
